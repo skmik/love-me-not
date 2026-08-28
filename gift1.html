@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Gift One 💕</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #fce4f5, #ead4ff);
+        color: #4a0950;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 30px 20px;
+        font-size: clamp(30px, 5vw, 50px);
+        text-shadow: 0 3px 10px rgba(74, 9, 80, 0.2);
+    }
+
+    /* PIERWSZA TAŚMA */
+
+    .film {
+        position: relative;
+
+        width: min(850px, 92%);
+        margin: 0 auto 45px;
+
+        padding: 28px;
+
+        background: #202020;
+        border-radius: 15px;
+
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Otwory na taśmie */
+
+    .holes {
+        position: absolute;
+        left: 15px;
+        right: 15px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .holes.top {
+        top: 8px;
+    }
+
+    .holes.bottom {
+        bottom: 8px;
+    }
+
+    .hole {
+        width: 13px;
+        height: 10px;
+        background: #f5f5f5;
+        border-radius: 3px;
+    }
+
+    .film-photo {
+        width: 30%;
+        max-width: 230px;
+
+        padding: 8px 8px 15px;
+
+        background: white;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+        transition: transform 0.3s ease;
+    }
+
+    .film-photo img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 1.15;
+        object-fit: cover;
+    }
+
+    .film-photo:nth-child(2) {
+        transform: rotate(-3deg);
+    }
+
+    .film-photo:nth-child(3) {
+        transform: rotate(2deg);
+    }
+
+    .film-photo:nth-child(4) {
+        transform: rotate(-2deg);
+    }
+
+    .film-photo:hover {
+        transform: rotate(0deg) scale(1.05);
+        z-index: 2;
+    }
+
+
+    /* DRUGA CZĘŚĆ - POLAROIDS */
+
+    .polaroids {
+        width: min(850px, 92%);
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .polaroid {
+        width: 220px;
+        padding: 10px 10px 35px;
+
+        background: white;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+        transition: transform 0.3s ease;
+    }
+
+    .polaroid img {
+        display: block;
+
+        width: 100%;
+        height: 190px;
+
+        object-fit: cover;
+    }
+
+    .polaroid:nth-child(1) {
+        transform: rotate(5deg);
+    }
+
+    .polaroid:nth-child(2) {
+        transform: rotate(-4deg) translateY(-15px);
+    }
+
+    .polaroid:nth-child(3) {
+        transform: rotate(6deg);
+    }
+
+    .polaroid:hover {
+        transform: rotate(0deg) scale(1.08);
+        z-index: 3;
+    }
+
+    /* PRZYCISK POWROTU */
+
+    .back {
+        display: block;
+        margin: 35px auto;
+
+        padding: 12px 25px;
+
+        border: none;
+        border-radius: 15px;
+
+        background: #4a0950;
+        color: white;
+
+        font-size: 16px;
+        font-weight: bold;
+
+        cursor: pointer;
+
+        transition: transform 0.2s ease;
+    }
+
+    .back:hover {
+        transform: scale(1.05);
+    }
+
+
+    /* TELEFON */
+
+    @media (max-width: 650px) {
+
+        h1 {
+            margin: 20px;
+        }
+
+        .film {
+            gap: 10px;
+            padding: 22px 12px;
+        }
+
+        .film-photo {
+            padding: 5px 5px 10px;
+        }
+
+        .polaroids {
+            gap: 10px;
+        }
+
+        .polaroid {
+            width: 30%;
+            padding: 6px 6px 20px;
+        }
+
+        .polaroid img {
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
+
+        .hole {
+            width: 9px;
+            height: 7px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<h1>Nasze zdjęcia 📸💕</h1>
+
+
+<!-- PIERWSZE 3 ZDJĘCIA -->
+
+<div class="film">
+
+    <div class="holes top">
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+    </div>
+
+    <div class="holes bottom">
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+        <span class="hole"></span>
+    </div>
+
+
+    <div class="film-photo">
+        <img src="p1.png" alt="Zdjęcie 1">
+    </div>
+
+    <div class="film-photo">
+        <img src="p2.jpg" alt="Zdjęcie 2">
+    </div>
+
+    <div class="film-photo">
+        <img src="p3.jpg" alt="Zdjęcie 3">
+    </div>
+
+</div>
+
+
+<!-- KOLEJNE 3 ZDJĘCIA -->
+
+<div class="polaroids">
+
+    <div class="polaroid">
+        <img src="p4.jpg" alt="Zdjęcie 4">
+    </div>
+
+    <div class="polaroid">
+        <img src="p5.jpg" alt="Zdjęcie 5">
+    </div>
+
+    <div class="polaroid">
+        <img src="p6.jpg" alt="Zdjęcie 6">
+    </div>
+
+</div>
+
+
+<button class="back" onclick="location.href='hihi.html'">
+    Wróć
+</button>
+```
+
+</body>
+</html>
