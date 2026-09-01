@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Gift Three 💌</title>
 
     <!-- Ładna czcionka pisarska -->
@@ -19,15 +19,11 @@
         body {
             margin: 0;
             min-height: 100vh;
-
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-
-            padding: 40px 20px;
-
+            padding: 40px 20px 100px;
             font-family: Arial, sans-serif;
-
             background: linear-gradient(
                 135deg,
                 #fce4f5,
@@ -35,81 +31,61 @@
             );
         }
 
-        /* Kartka */
-
+        /* Kartki */
         .letter {
             position: relative;
-
             width: min(800px, 100%);
-
             min-height: 650px;
-
             padding: 70px 80px;
-
             background:
                 linear-gradient(
                     rgba(255,255,255,0.3),
                     rgba(255,255,255,0.3)
                 ),
                 #fffaf2;
-
             border-radius: 5px;
-
             box-shadow:
                 0 20px 50px rgba(74, 9, 80, 0.2);
-
             transform: rotate(-1deg);
         }
 
-        /* Dekoracyjna góra */
+        /* Odstęp między pierwszą a drugą kartką */
+        .letter + .letter {
+            margin-top: 60px;
+            transform: rotate(1deg);
+        }
 
+        /* Dekoracyjna góra */
         .letter h1 {
             margin: 0 0 35px;
-
             text-align: center;
-
             font-family: "Dancing Script", cursive;
-
             font-size: clamp(42px, 7vw, 65px);
-
             color: #8d326d;
         }
 
         /* Miejsce na list */
-
         .letter-text {
             font-family: "Dancing Script", cursive;
-
             font-size: clamp(24px, 4vw, 32px);
-
             line-height: 1.7;
-
             color: #3f2940;
-
             white-space: pre-line;
         }
 
         /* Podpis */
-
         .signature {
             margin-top: 35px;
-
             text-align: right;
-
             font-family: "Dancing Script", cursive;
-
             font-size: 32px;
-
             color: #8d326d;
         }
 
         /* Serduszka */
-
         .heart {
             position: absolute;
-
             font-size: 28px;
-
             opacity: 0.7;
         }
 
@@ -138,49 +114,38 @@
         }
 
         /* Przycisk */
-
         .back {
-            position: fixed;
-
-            bottom: 20px;
-            left: 50%;
-
-            transform: translateX(-50%);
-
+            margin-top: 50px;
             padding: 13px 25px;
-
             border: none;
             border-radius: 15px;
-
             background: #4a0950;
             color: white;
-
             font-size: 16px;
             font-weight: bold;
-
             cursor: pointer;
-
             transition: 0.25s;
         }
 
         .back:hover {
-            transform: translateX(-50%) scale(1.05);
+            transform: scale(1.05);
         }
 
-
         /* Telefon */
-
         @media (max-width: 600px) {
 
             body {
-                padding: 25px 15px 90px;
+                padding: 25px 15px 50px;
             }
 
             .letter {
                 min-height: 550px;
-
                 padding: 50px 30px;
+                transform: rotate(0deg);
+            }
 
+            .letter + .letter {
+                margin-top: 40px;
                 transform: rotate(0deg);
             }
 
@@ -197,6 +162,7 @@
 
 <body>
 
+    <!-- PIERWSZY LIST — NIC NIE ZMIENIAŁEM -->
     <div class="letter">
 
         <div class="heart one">💕</div>
@@ -204,22 +170,48 @@
         <div class="heart three">♡</div>
         <div class="heart four">💕</div>
 
-
         <h1>Hihi kochana emilko... 💌</h1>
 
         <div class="letter-text">
-
 Pisać mogę o wielu rzeczach i w wielu językach, ale tym razem wybiorę język miłości i faktów.
 
 Może nie znamy się jeszcze tak długo jak Ty i Twoi przyjaciele, ale mimo tego czuję, że łączy nas naprawdę niesamowita więź. Z każdym dniem coraz bardziej doceniam to, że jesteś w moim życiu.
-Mam nadzieję, że przed nami jeszcze długa i piękna droga — pełna dobra, szczerości, miłości i szczęścia.
 
+Mam nadzieję, że przed nami jeszcze długa i piękna droga — pełna dobra, szczerości, miłości i szczęścia.
+        </div>
+
+        <div class="signature">
+            Ilysmmmmm 💕
+        </div>
+
+    </div>
+
+
+    <!-- DRUGI OSOBNY LIST -->
+    <div class="letter">
+
+        <div class="heart one">💕</div>
+        <div class="heart two">♡</div>
+        <div class="heart three">♡</div>
+        <div class="heart four">💕</div>
+
+        <h1>Od drugiej połówki :3</h1>
+
+        <div class="letter-text">
+
+kochany antosiu 
+łatwiej mi to pisać bo fest nie lubię gadać z kimś o tym tak prosto w oczy 
+ogólnie to mega się cieszę a za razem jestem zdziwiona że w tak krótkim czasie zostaliśmy parą 
+jest to mój pierwszy związek więc nie do końca wiem jak się zachowywać ale pracuje nad tym 
+naprawdę to doceniam że ze mną jesteś bo sama dobrze wiem że mam humorki i to czasami wpływa na ludzi więc jakbym kiedyś coś ci powiedziała nie tak to naprawdę ja nie chce ale mam zjazdu poprostu 
+jesteś dla mnie naprawdę ważna i wyjątkowa osobą bo nie dość że jesteś moim pierwszym chłopakiem to jeszcze pierwszym pocałunkiem przez który tak się jaram że to szok (kiedy powtórka czy coś?)
+wiem że na spotkaniach czasami jestem taka zamknięta w sobie i unikam czasami niektórych rzeczy to jak już tłumaczyłam ja naprawdę chcę tego tylko poprostu nie wiem jak się zachować za co mi głupio 
+jeśli kiedykolwiek cię skrzywdzę to naprawdę mega cię przepraszam i pamiętaj że kocham cię nad życie nawet gdy tego nie pokazuje
 
         </div>
 
-
         <div class="signature">
-           Ilysmmmmm 💕
+            P.S.: a i pamiętaj że możesz mi powiedzieć wszystko ja cię zawsze wysłucham i nie bój się mnie dotknąć czy coś zrobić bo ja naprawdę jestem otwarta na dotyk i no kocham cię i tyle
         </div>
 
     </div>
@@ -230,4 +222,5 @@ Mam nadzieję, że przed nami jeszcze długa i piękna droga — pełna dobra, s
     </button>
 
 </body>
+
 </html>
